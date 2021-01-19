@@ -1,8 +1,7 @@
-
-//generates computer's selection
 let computerScore = 0;
 let playerScore = 0;
 
+//generates computer's selection
 function computerPlay() {
     const choices = ["rock", "paper", "scissors"];
     let random = Math.floor(Math.random() * 3);
@@ -46,7 +45,7 @@ function game() {
     for (let i = 0; i < 5; i++) {
         let playerSelection = prompt("Enter rock, paper, or scissors.");
         let computerSelection = computerPlay();
-        playRound(computerSelection, playerSelection.toLowerCase());
+        console.log(playRound(computerSelection, playerSelection.toLowerCase()));
         console.log(playerScore);
         console.log(computerScore);
     };
